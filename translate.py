@@ -4,7 +4,7 @@ x= 'what are you doing now'
 print('is calculating')
 
 
-res = s.translate( 'hi' , dest = 'fr', src = 'en')
+res = s.translate( x , dest = 'fr', src = 'en')
 res = res.text
 
 
