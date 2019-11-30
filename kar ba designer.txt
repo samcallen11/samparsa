@@ -1,0 +1,15 @@
+baraye kar ba designer bayad kar haye zir ro anjam bdid:
+
+bayad PyQt5 va PyQt5-tools ro nasb konid.
+berid to python shell va benevisid:
+import site
+print(site.getsitepackages())
+do ta adress print mishe brid be adres dovvom
+brid to folder site-packages.
+brid to folder pyqt5-tools.
+brid to folder Qt.
+brid to folder bin.
+az 'designer.exe' short cut begirid va biarid to desktop va estefade konid
+
+agar bekhayd file ui ro be py tabdil konid bayad in dastoor ro to cmd vard konid:
+pyuic5 -x "adrese file ui" -o "adres file py ke mikhayd dorost beshe" 
