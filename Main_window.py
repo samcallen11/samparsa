@@ -11,14 +11,21 @@ import datetime
 today = datetime.datetime.today().weekday()
 today = (today + 2) % 7
 
+
+from ClassClass import Classes
+
+
+
+
 print(today, 'today')
 
 
 from Main import me
+
+
+me.ToDo = Classes[me.Class][today]
+print(me.ToDo)
 print('salam')
-me.ToDo = me.Class[today]
-
-
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -59,37 +66,37 @@ class Ui_MainWindow(object):
         self.ToDoTB.setGeometry(QtCore.QRect(235, 280, 541, 41))
         self.ToDoTB.setObjectName("ToDoTB")
 
-        C3Text = me.ToDo[2]
+        self.C3Text = me.ToDo[2].Name
         self.C3 = QtWidgets.QPushButton(self.centralwidget)
         self.C3.setGeometry(QtCore.QRect(410, 340, 81, 23))
         self.C3.setFlat(True)
         self.C3.setObjectName("C3")
 
-        C4Text = me.ToDo[3]
+        self.C4Text = me.ToDo[3].Name
         self.C4 = QtWidgets.QPushButton(self.centralwidget)
         self.C4.setGeometry(QtCore.QRect(500, 340, 81, 23))
         self.C4.setFlat(True)
         self.C4.setObjectName("C4")
 
-        C6Text = me.ToDo[5]
+        self.C6Text = me.ToDo[5].Name
         self.C6 = QtWidgets.QPushButton(self.centralwidget)
         self.C6.setGeometry(QtCore.QRect(690, 340, 81, 23))
         self.C6.setFlat(True)
         self.C6.setObjectName("C6")
 
-        C5Text = me.ToDo[4]
+        self.C5Text = me.ToDo[4].Name
         self.C5 = QtWidgets.QPushButton(self.centralwidget)
         self.C5.setGeometry(QtCore.QRect(590, 340, 81, 23))
         self.C5.setFlat(True)
         self.C5.setObjectName("C5")
         
-        C2Text = me.ToDo[1]
+        self.C2Text = me.ToDo[1].Name
         self.C2 = QtWidgets.QPushButton(self.centralwidget)
         self.C2.setGeometry(QtCore.QRect(330, 340, 71, 23))
         self.C2.setFlat(True)
         self.C2.setObjectName("C2")
 
-        C1Text = me.ToDo[0]
+        self.C1Text = me.ToDo[0].Name
         self.C1 = QtWidgets.QPushButton(self.centralwidget)
         self.C1.setGeometry(QtCore.QRect(240, 340, 81, 23))
         self.C1.setFlat(True)
@@ -240,12 +247,13 @@ class Ui_MainWindow(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">To Do</span></p></body></html>"))
-        self.C3.setText(_translate("MainWindow", C3Text))
-        self.C4.setText(_translate("MainWindow", C4Text))
-        self.C6.setText(_translate("MainWindow", C6Text))
-        self.C5.setText(_translate("MainWindow", C5Text))
-        self.C2.setText(_translate("MainWindow", C2Text))
-        self.C1.setText(_translate("MainWindow", C1Text))
+        print(self.C3Text, 'hi')
+        self.C3.setText(_translate("MainWindow", self.C3Text))
+        self.C4.setText(_translate("MainWindow", self.C4Text))
+        self.C6.setText(_translate("MainWindow", self.C6Text))
+        self.C5.setText(_translate("MainWindow", self.C5Text))
+        self.C2.setText(_translate("MainWindow", self.C2Text))
+        self.C1.setText(_translate("MainWindow", self.C1Text))
         self.Classes.setText(_translate("MainWindow", "Classes"))
         self.MRCT.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

@@ -2,15 +2,15 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import *
 
 import sys
-sys.path.append('D:\\h3project\\namayeshgah\\sigh-out')
-sys.path.append('D:\\h3project\\namayeshgah\\Info')
+sys.path.append('D:\\h3project\\sigh-out')
+sys.path.append('D:\\h3project\\Info')
 
 from PyQt5_sighout import Sign_out, so_window, student_list
 
 
 from StudentClass import student
 from StudentList import student_list
-from ClassClass import Classes
+
 
 #print(student, student_list, Sign_out, Infor)
 
@@ -44,11 +44,7 @@ elif so_window.next == True:
     me.Username = Info_window.Uname
     me.School = Info_window.School
     me.Grade = Info_window.Grade
-    me.Class = Classes[Info_window.Class]
-    
-
-
-    
+    me.Class = Info_window.Class
     me.RClass = Info_window.RClass
     me.Year = Info_window.Year
     me.Month = Info_window.Month
@@ -57,8 +53,7 @@ elif so_window.next == True:
     
     print('Welcome', me.username_sign, me.Class, me.Fname, me.Lname)
     
-    Info_window.close()
-    print('hi')
 
-app.exec_()
+
+
 # sigh out window
