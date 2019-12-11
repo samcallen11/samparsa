@@ -1,16 +1,9 @@
-class Class:
-    def __init__(self, saturday, sunday, monday, tuesday, wednesday, thursday):
-        self.Saturday = saturday
-        self.Sunday = sunday
-        self.Monday = monday
-        self.Tuesday = tuesday
-        self.Wednsday = wednesday
-        self.Thursday = thursday
+
 from  Classes import *
 
 
 
-c202 = Class([Quran, Math, Maaref_takmily, Math, Computer, Computer],
+c202 =      ([Quran, Math, Maaref_takmily, Math, Computer, Computer],
              [English, English, Physic, Work, Physic, About_science],
              [Math, Laboratory, Math, Chemistry, Math, Work],
              [Sport, Sport, Literature, Literature, Arabic, History],
@@ -19,6 +12,14 @@ c202 = Class([Quran, Math, Maaref_takmily, Math, Computer, Computer],
 
                   )
 
+c201 =     ([Math, Maaref_takmily, Computer, Computer, Math, Quran],
+            [English, English, Work, Physic, About_science, Physic],
+            [Laboratory, Math, Chemistry, Math, Work, Math],
+            [Literature, Literature, Sport, Sport, History, Arabic],
+            [Biology, Writing, Art, Advice, Research_Class, Research_Class],
+            [Scaning, Education, Scaning, Social_Studies, '-', '-']
 
-Classes = {'202': c202}
-print(Classes['202'])
+            )
+
+Classes = {'202': c202, '201': c201}
+
