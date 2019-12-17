@@ -31,4 +31,4 @@ Research_Class = Sclass(0, [''], '', '', 'Research_Class')
 Education = Sclass(0, [''], '', '', 'Education')
 Scaning = Sclass(0, [''], '', '', 'Scaning')
 Social_Studies = Sclass(0, [''], '', '', 'Social_Studies')
-
+O = Sclass(0, [''], '', '', '-')
