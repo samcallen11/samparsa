@@ -52,9 +52,12 @@ class Sign_out(object):
         self.Lpass.setObjectName("Lpass")
         self.verticalLayout.addWidget(self.Lpass)
         
+        
         self.Ipass = QtWidgets.QLineEdit(Sigh_out_window)
         self.Ipass.setText("")
         self.Ipass.setObjectName("Ipass")
+        self.Ipass.setEchoMode(QtWidgets.QLineEdit.Password)
+        
         self.verticalLayout.addWidget(self.Ipass)
 
         
@@ -64,6 +67,7 @@ class Sign_out(object):
         self.Irepass = QtWidgets.QLineEdit(Sigh_out_window)
         self.Irepass.setText("")
         self.Irepass.setObjectName("Irepass")
+        self.Irepass.setEchoMode(QtWidgets.QLineEdit.Password)
         self.verticalLayout.addWidget(self.Irepass)
         
         self.Ucreate = QtWidgets.QPushButton(Sigh_out_window)
